@@ -1,0 +1,5 @@
+.y-rate {
+}
+.y-rate::after {
+  content: "\e717";
+}

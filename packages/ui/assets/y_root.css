@@ -1,0 +1,32 @@
+:root {
+  --y-text-color-default: #606266;
+  --y-text-color-white: #fff;
+  --y-text-color-black: #000;
+  --y-text-color-primary: #409eff;
+  --y-bg-color-white: #fff;
+  --y-bg-color-primary: #409eff;
+  --y-bg-color-warn: #e6a23c;
+  --y-bg-color-error: #f56c6c;
+  --y-border-color-default: #dcdfe6;
+  --y-border-color-primary: #409eff;
+  --y-border-color-warn: #e6a23c;
+  --y-border-color-error: #f56c6c;
+  --y-hover-bg-color-default: #ecf5ff;
+  --y-hover-bg-color-primary: #79bbff;
+  --y-hover-bg-color-warn: #eebe77;
+  --y-hover-bg-color-error: #f89898;
+  --y-disable-bg-color-default: #e4e7ed;
+  --y-disable-bg-color-primary: #a0cfff;
+  --y-disable-bg-color-warn: #a0cfff;
+  --y-disable-bg-color-error: #fab6b6;
+  --y-dialog-box-color: rgba(0, 0, 0, 0.5);
+  --y-border-radus-base: 4px;
+  --y-message-success-text-color: #67c23a;
+  --y-message-success-bg-color: #f0f9eb;
+  --y-message-error-text-color: #f56c6c;
+  --y-message-error-bg-color: #fef0f0;
+  --y-message-warning-text-color: #e6a23c;
+  --y-message-warning-bg-color: #fdf6ec;
+  --y-message-info-text-color: #909399;
+  --y-message-info-bg-color: #f4f4f5;
+}

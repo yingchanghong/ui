@@ -1,0 +1,86 @@
+.y-button {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1;
+  padding: 8px 15px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #eee;
+  background-color: var(--y-bg-color-white);
+  color: var(--y-text-color-default);
+  border-radius: 4px;
+}
+.y-button:hover {
+  color: var(--y-text-color-primary);
+  background-color: var(--y-hover-bg-color-default);
+}
+.y-button--primary,
+.y-button--warn,
+.y-button--error {
+  color: var(--y-text-color-white);
+}
+.y-button--primary:hover,
+.y-button--warn:hover,
+.y-button--error:hover {
+  color: var(--y-text-color-white);
+}
+.y-button--primary {
+  background-color: var(--y-bg-color-primary);
+  border: 1px solid var(--y-border-color-primary);
+}
+.y-button--primary:hover {
+  background-color: var(--y-hover-bg-color-primary);
+}
+
+.y-button--warn {
+  background-color: var(--y-bg-color-warn);
+  border: 1px solid var(--y-border-color-warn);
+}
+.y-button--warn:hover {
+  background-color: var(--y-hover-bg-color-warn);
+  border: 1px solid var(--y-border-color-warn);
+}
+
+.y-button--error {
+  background-color: var(--y-bg-color-error);
+  border: 1px solid var(--y-border-color-error);
+}
+.y-button--error:hover {
+  background-color: var(--y-hover-bg-color-error);
+  border: 1px solid var(--y-hover-bg-color-error);
+}
+
+.y-button--small {
+  height: 24px;
+  font-size: 12px;
+  padding: 5px 11px;
+}
+
+.is--disabled {
+  cursor: not-allowed;
+  background-image: none;
+}
+.is--disabled-default.y-button {
+  background-color: var(--y-text-color-white);
+  border-color: var(--y-disable-bg-color-default);
+}
+/* .is--disabled.y-button:hover {
+  color: var(--y-text-color-default);
+} */
+.is--disabled.y-button--primary {
+  background-color: var(--y-disable-bg-color-primary);
+  border-color: var(--y-disable-bg-color-primary);
+}
+.is--disabled.y-button--warn {
+  background-color: var(--y-disable-bg-color-warn);
+  border-color: var(--y-disable-bg-color-warn);
+}
+.is--disabled.y-button--error {
+  background-color: var(--y-disable-bg-color-error);
+  border-color: var(--y-disable-bg-color-error);
+}
+.is--disabled.y-button.y-button--primary:hover
+  .is--disabled.y-button.y-button--warn:hover
+  .is--disabled.y-button.y-button--error:hover {
+  color: var(--y-text-color-white) !important;
+}

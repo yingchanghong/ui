@@ -1,0 +1,21 @@
+.y-tab--list {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+.y-tab--item {
+  flex-shrink: 0;
+  padding-left: 36px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.y-tab--item:first-child {
+  padding-left: 0;
+}
+.y-tab--content {
+  padding: 6px 0;
+}
+.y-tab--active {
+  color: var(--y-text-color-primary);
+}

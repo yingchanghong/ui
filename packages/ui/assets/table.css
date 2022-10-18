@@ -1,0 +1,45 @@
+.y-table {
+  order: 0;
+  border-radius: 3px;
+}
+.y-table-number {
+  max-width: 70px;
+}
+.y-table .y-table-header th {
+  padding: 12px;
+  background: #fafafa;
+  font-weight: 500;
+  color: rgb(31, 34, 37);
+}
+.y-table .y-table-body {
+  font-size: 14px;
+  color: #000000d9;
+}
+.y-table .y-table-body td {
+  padding: 8px;
+}
+
+.y-table-bottom td,
+th {
+  border-bottom: 1px solid rgba(239, 239, 245, 1) !important;
+}
+.y-table-border td {
+  border-right: 1px solid rgba(239, 239, 245, 1) !important;
+  border-bottom: 1px solid rgba(239, 239, 245, 1) !important;
+}
+.y-table-border th {
+  border-right: 1px solid rgba(239, 239, 245, 1) !important;
+  border-bottom: 1px solid rgba(239, 239, 245, 1) !important;
+}
+.y-table-border td:first-child {
+  border-left: 1px solid rgba(239, 239, 245, 1) !important;
+}
+.y-table-border th:first-child {
+  border-left: 1px solid rgba(239, 239, 245, 1) !important;
+}
+.y-table-border thead th {
+  border-top: 1px solid rgba(239, 239, 245, 1) !important;
+}
+.y-table-stripe:nth-child(2n) {
+  background: #f9f9f9 !important;
+}

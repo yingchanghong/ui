@@ -1,0 +1,64 @@
+.y-message {
+  width: fit-content;
+  min-width: 320px;
+  max-width: calc(100% - 32px);
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  padding: 15px 15px 15px 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: var(--y-border-radus-base);
+  background: #edf2fc;
+  z-index: 999;
+  transition: opacity 0.3s, transform 0.4s, top 0.4s;
+}
+
+.y-message--info {
+  color: var(--y-message-info-text-color);
+  background: var(--y-message-info-bg-color);
+}
+
+.y-message--success {
+  color: var(--y-message-success-text-color);
+  background: var(--y-message-success-bg-color);
+}
+
+.y-message--warning {
+  color: var(--y-message-warning-text-color);
+  background: var(--y-message-warning-bg-color);
+}
+.y-message--error {
+  color: var(--y-message-error-text-color);
+  background: var(--y-message-error-bg-color);
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: transform 0.4s, opacity 0.4s;
+}
+.fade-enter-from {
+  transform: translate(-50%, -50px);
+  opacity: 0;
+}
+.fade-leave-to {
+  transform: translate(-50%, -50px) !important;
+  opacity: 0;
+}
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}
+/* .fade-enter-from,
+.fade-leave-to {
+  transform: translateY(-150px);
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s ease;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transform-origin: left center;
+  transition: all 0.5s, transform 0.5s;
+} */

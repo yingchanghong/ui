@@ -1,0 +1,10 @@
+import "./button.css";
+import "./y_root.css";
+import "./dialog.css";
+import "./rate.css";
+import "./message.css";
+import "./tabs.css";
+import "./upload.css";
+import "./table.css";
+import "./waterMark.css";
+import "./carousel.css";

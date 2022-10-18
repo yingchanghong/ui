@@ -1,0 +1,27 @@
+import { App } from "vue";
+import "../assets/index.ts";
+import yButton from "../component/button/index";
+import yDialog from "../component/dialog/index";
+import yRate from "../component/rate/index";
+import YMessage from "../component/message/index";
+import YTabPane from "../component/tabPain/index";
+import YUpload from "../component/upload/index";
+import YTable from "../component/table/index";
+import YWaterMark from "../component/waterMark/index";
+import YCarousel from "../component/carousel/index";
+declare const install: (app: App) => void;
+export { yButton, yDialog, yRate, install, YMessage, YUpload, YTabPane, YTable, YWaterMark, YCarousel, };
+declare const _default: {
+    install: (app: App<any>) => void;
+    "y-button": import("vue").ComponentOptions<{}, any, any, any, any, any, any, any>;
+    "y-dialog": import("vue").ComponentOptions<{}, any, any, any, any, any, any, any>;
+    "y-rate": import("vue").ComponentOptions<{}, any, any, any, any, any, any, any>;
+    YMessage: typeof YMessage;
+    YTabs: import("vue").ComponentOptions<{}, any, any, any, any, any, any, any>;
+    YUpload: import("vue").ComponentOptions<{}, any, any, any, any, any, any, any>;
+    YTabPane: import("vue").ComponentOptions<{}, any, any, any, any, any, any, any>;
+    YTable: import("vue").ComponentOptions<{}, any, any, any, any, any, any, any>;
+    YWaterMark: import("vue").ComponentOptions<{}, any, any, any, any, any, any, any>;
+    YCarousel: import("vue").ComponentOptions<{}, any, any, any, any, any, any, any>;
+};
+export default _default;

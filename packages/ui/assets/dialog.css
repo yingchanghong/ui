@@ -1,0 +1,36 @@
+.y-popup-body {
+  overflow: hidden;
+}
+.y-dialog {
+  z-index: 1999;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--y-dialog-box-color);
+}
+.y-dialog_box {
+  position: relative;
+  margin: 0 auto 50px;
+  border-radius: 2px;
+  background: #fff;
+}
+.y-dialog_header,
+.y-dialog_body {
+  position: relative;
+  padding: 20px 20px 10px;
+}
+.y-dialog_close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.y-dialog_close::after {
+  content: "\2A2F";
+}
+.y-dialog_footer {
+  padding: 10px 20px 20px;
+  text-align: right;
+}
