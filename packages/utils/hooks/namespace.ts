@@ -1,8 +1,3 @@
-import type { App } from "vue";
-import TabPain from "./index.vue";
-TabPain.install = (app: App) => {
-  app.component("y-tab-pain", TabPain);
-};
 // export function createBEM(prefixName: string) {
 //   const b = (blockSuffix: string = "") => _bem(prefixName, blockSuffix, "", "");
 //   const e = (element: string = "") =>
@@ -35,4 +30,3 @@ TabPain.install = (app: App) => {
 //     m,
 //   };
 // }
-export default TabPain;

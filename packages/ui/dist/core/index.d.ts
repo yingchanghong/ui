@@ -9,8 +9,10 @@ import YUpload from "../component/upload/index";
 import YTable from "../component/table/index";
 import YWaterMark from "../component/waterMark/index";
 import YCarousel from "../component/carousel/index";
+import YForm from "../component/form/index";
+import YFormItem from "../component/formItem/index";
 declare const install: (app: App) => void;
-export { yButton, yDialog, yRate, install, YMessage, YUpload, YTabPane, YTable, YWaterMark, YCarousel, };
+export { yButton, yDialog, yRate, install, YMessage, YUpload, YTabPane, YTable, YWaterMark, YCarousel, YForm, YFormItem, };
 declare const _default: {
     install: (app: App<any>) => void;
     "y-button": import("vue").ComponentOptions<{}, any, any, any, any, any, any, any>;
@@ -23,5 +25,7 @@ declare const _default: {
     YTable: import("vue").ComponentOptions<{}, any, any, any, any, any, any, any>;
     YWaterMark: import("vue").ComponentOptions<{}, any, any, any, any, any, any, any>;
     YCarousel: import("vue").ComponentOptions<{}, any, any, any, any, any, any, any>;
+    YForm: import("vue").ComponentOptions<{}, any, any, any, any, any, any, any>;
+    YFormItem: import("vue").ComponentOptions<{}, any, any, any, any, any, any, any>;
 };
 export default _default;

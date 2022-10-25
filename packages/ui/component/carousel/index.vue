@@ -33,6 +33,7 @@
 
 <script lang="ts" setup>
 import { ref, onUnmounted, onMounted } from "vue";
+
 const props = defineProps({
   list: {
     type: Array as any,

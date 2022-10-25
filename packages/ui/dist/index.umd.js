@@ -33,38 +33,41 @@
     }
   }
 
-  var css_248z$9 = ".y-button {\n  height: 32px;\n  font-size: 14px;\n  line-height: 1;\n  padding: 8px 15px;\n  outline: none;\n  cursor: pointer;\n  border: 1px solid #eee;\n  background-color: var(--y-bg-color-white);\n  color: var(--y-text-color-default);\n  border-radius: 4px;\n}\n.y-button:hover {\n  color: var(--y-text-color-primary);\n  background-color: var(--y-hover-bg-color-default);\n}\n.y-button--primary,\n.y-button--warn,\n.y-button--error {\n  color: var(--y-text-color-white);\n}\n.y-button--primary:hover,\n.y-button--warn:hover,\n.y-button--error:hover {\n  color: var(--y-text-color-white);\n}\n.y-button--primary {\n  background-color: var(--y-bg-color-primary);\n  border: 1px solid var(--y-border-color-primary);\n}\n.y-button--primary:hover {\n  background-color: var(--y-hover-bg-color-primary);\n}\n\n.y-button--warn {\n  background-color: var(--y-bg-color-warn);\n  border: 1px solid var(--y-border-color-warn);\n}\n.y-button--warn:hover {\n  background-color: var(--y-hover-bg-color-warn);\n  border: 1px solid var(--y-border-color-warn);\n}\n\n.y-button--error {\n  background-color: var(--y-bg-color-error);\n  border: 1px solid var(--y-border-color-error);\n}\n.y-button--error:hover {\n  background-color: var(--y-hover-bg-color-error);\n  border: 1px solid var(--y-hover-bg-color-error);\n}\n\n.y-button--small {\n  height: 24px;\n  font-size: 12px;\n  padding: 5px 11px;\n}\n\n.is--disabled {\n  cursor: not-allowed;\n  background-image: none;\n}\n.is--disabled-default.y-button {\n  background-color: var(--y-text-color-white);\n  border-color: var(--y-disable-bg-color-default);\n}\n/* .is--disabled.y-button:hover {\n  color: var(--y-text-color-default);\n} */\n.is--disabled.y-button--primary {\n  background-color: var(--y-disable-bg-color-primary);\n  border-color: var(--y-disable-bg-color-primary);\n}\n.is--disabled.y-button--warn {\n  background-color: var(--y-disable-bg-color-warn);\n  border-color: var(--y-disable-bg-color-warn);\n}\n.is--disabled.y-button--error {\n  background-color: var(--y-disable-bg-color-error);\n  border-color: var(--y-disable-bg-color-error);\n}\n.is--disabled.y-button.y-button--primary:hover\n  .is--disabled.y-button.y-button--warn:hover\n  .is--disabled.y-button.y-button--error:hover {\n  color: var(--y-text-color-white) !important;\n}\n";
+  var css_248z$a = ".y-button {\n  height: 32px;\n  font-size: 14px;\n  line-height: 1;\n  padding: 8px 15px;\n  outline: none;\n  cursor: pointer;\n  border: 1px solid #eee;\n  background-color: var(--y-bg-color-white);\n  color: var(--y-text-color-default);\n  border-radius: 4px;\n}\n.y-button:hover {\n  color: var(--y-text-color-primary);\n  background-color: var(--y-hover-bg-color-default);\n}\n.y-button--primary,\n.y-button--warn,\n.y-button--error {\n  color: var(--y-text-color-white);\n}\n.y-button--primary:hover,\n.y-button--warn:hover,\n.y-button--error:hover {\n  color: var(--y-text-color-white);\n}\n.y-button--primary {\n  background-color: var(--y-bg-color-primary);\n  border: 1px solid var(--y-border-color-primary);\n}\n.y-button--primary:hover {\n  background-color: var(--y-hover-bg-color-primary);\n}\n\n.y-button--warn {\n  background-color: var(--y-bg-color-warn);\n  border: 1px solid var(--y-border-color-warn);\n}\n.y-button--warn:hover {\n  background-color: var(--y-hover-bg-color-warn);\n  border: 1px solid var(--y-border-color-warn);\n}\n\n.y-button--error {\n  background-color: var(--y-bg-color-error);\n  border: 1px solid var(--y-border-color-error);\n}\n.y-button--error:hover {\n  background-color: var(--y-hover-bg-color-error);\n  border: 1px solid var(--y-hover-bg-color-error);\n}\n\n.y-button--small {\n  height: 24px;\n  font-size: 12px;\n  padding: 5px 11px;\n}\n\n.is--disabled {\n  cursor: not-allowed;\n  background-image: none;\n}\n.is--disabled-default.y-button {\n  background-color: var(--y-text-color-white);\n  border-color: var(--y-disable-bg-color-default);\n}\n/* .is--disabled.y-button:hover {\n  color: var(--y-text-color-default);\n} */\n.is--disabled.y-button--primary {\n  background-color: var(--y-disable-bg-color-primary);\n  border-color: var(--y-disable-bg-color-primary);\n}\n.is--disabled.y-button--warn {\n  background-color: var(--y-disable-bg-color-warn);\n  border-color: var(--y-disable-bg-color-warn);\n}\n.is--disabled.y-button--error {\n  background-color: var(--y-disable-bg-color-error);\n  border-color: var(--y-disable-bg-color-error);\n}\n.is--disabled.y-button.y-button--primary:hover\n  .is--disabled.y-button.y-button--warn:hover\n  .is--disabled.y-button.y-button--error:hover {\n  color: var(--y-text-color-white) !important;\n}\n";
+  styleInject(css_248z$a);
+
+  var css_248z$9 = ":root {\n  --y-text-color-default: #606266;\n  --y-text-color-white: #fff;\n  --y-text-color-black: #000;\n  --y-text-color-primary: #409eff;\n  --y-bg-color-white: #fff;\n  --y-bg-color-primary: #409eff;\n  --y-bg-color-warn: #e6a23c;\n  --y-bg-color-error: #f56c6c;\n  --y-border-color-default: #dcdfe6;\n  --y-border-color-primary: #409eff;\n  --y-border-color-warn: #e6a23c;\n  --y-border-color-error: #f56c6c;\n  --y-hover-bg-color-default: #ecf5ff;\n  --y-hover-bg-color-primary: #79bbff;\n  --y-hover-bg-color-warn: #eebe77;\n  --y-hover-bg-color-error: #f89898;\n  --y-disable-bg-color-default: #e4e7ed;\n  --y-disable-bg-color-primary: #a0cfff;\n  --y-disable-bg-color-warn: #a0cfff;\n  --y-disable-bg-color-error: #fab6b6;\n  --y-dialog-box-color: rgba(0, 0, 0, 0.5);\n  --y-border-radus-base: 4px;\n  --y-message-success-text-color: #67c23a;\n  --y-message-success-bg-color: #f0f9eb;\n  --y-message-error-text-color: #f56c6c;\n  --y-message-error-bg-color: #fef0f0;\n  --y-message-warning-text-color: #e6a23c;\n  --y-message-warning-bg-color: #fdf6ec;\n  --y-message-info-text-color: #909399;\n  --y-message-info-bg-color: #f4f4f5;\n}\n";
   styleInject(css_248z$9);
 
-  var css_248z$8 = ":root {\n  --y-text-color-default: #606266;\n  --y-text-color-white: #fff;\n  --y-text-color-black: #000;\n  --y-text-color-primary: #409eff;\n  --y-bg-color-white: #fff;\n  --y-bg-color-primary: #409eff;\n  --y-bg-color-warn: #e6a23c;\n  --y-bg-color-error: #f56c6c;\n  --y-border-color-default: #dcdfe6;\n  --y-border-color-primary: #409eff;\n  --y-border-color-warn: #e6a23c;\n  --y-border-color-error: #f56c6c;\n  --y-hover-bg-color-default: #ecf5ff;\n  --y-hover-bg-color-primary: #79bbff;\n  --y-hover-bg-color-warn: #eebe77;\n  --y-hover-bg-color-error: #f89898;\n  --y-disable-bg-color-default: #e4e7ed;\n  --y-disable-bg-color-primary: #a0cfff;\n  --y-disable-bg-color-warn: #a0cfff;\n  --y-disable-bg-color-error: #fab6b6;\n  --y-dialog-box-color: rgba(0, 0, 0, 0.5);\n  --y-border-radus-base: 4px;\n  --y-message-success-text-color: #67c23a;\n  --y-message-success-bg-color: #f0f9eb;\n  --y-message-error-text-color: #f56c6c;\n  --y-message-error-bg-color: #fef0f0;\n  --y-message-warning-text-color: #e6a23c;\n  --y-message-warning-bg-color: #fdf6ec;\n  --y-message-info-text-color: #909399;\n  --y-message-info-bg-color: #f4f4f5;\n}\n";
+  var css_248z$8 = ".y-popup-body {\n  overflow: hidden;\n}\n.y-dialog {\n  z-index: 1999;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background-color: var(--y-dialog-box-color);\n}\n.y-dialog_box {\n  position: relative;\n  margin: 0 auto 50px;\n  border-radius: 2px;\n  background: #fff;\n}\n.y-dialog_header,\n.y-dialog_body {\n  position: relative;\n  padding: 20px 20px 10px;\n}\n.y-dialog_close {\n  position: absolute;\n  top: 20px;\n  right: 20px;\n  cursor: pointer;\n}\n.y-dialog_close::after {\n  content: \"\\2A2F\";\n}\n.y-dialog_footer {\n  padding: 10px 20px 20px;\n  text-align: right;\n}\n.dialog-fade-enter-from,\n.dialog-fade-leave-to {\n  opacity: 0;\n}\n.dialog-fade-enter-to,\n.dialog-fade-leave-from {\n  opacity: 1;\n}\n\n.dialog-fade-enter-active,\n.dialog-fade-leave-active {\n  transition: all 0.3s ease-in;\n}\n";
   styleInject(css_248z$8);
 
-  var css_248z$7 = ".y-popup-body {\n  overflow: hidden;\n}\n.y-dialog {\n  z-index: 1999;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background-color: var(--y-dialog-box-color);\n}\n.y-dialog_box {\n  position: relative;\n  margin: 0 auto 50px;\n  border-radius: 2px;\n  background: #fff;\n}\n.y-dialog_header,\n.y-dialog_body {\n  position: relative;\n  padding: 20px 20px 10px;\n}\n.y-dialog_close {\n  position: absolute;\n  top: 20px;\n  right: 20px;\n  cursor: pointer;\n}\n.y-dialog_close::after {\n  content: \"\\2A2F\";\n}\n.y-dialog_footer {\n  padding: 10px 20px 20px;\n  text-align: right;\n}\n";
+  var css_248z$7 = ".y-rate {\n}\n.y-rate::after {\n  content: \"\\e717\";\n}\n";
   styleInject(css_248z$7);
 
-  var css_248z$6 = ".y-rate {\n}\n.y-rate::after {\n  content: \"\\e717\";\n}\n";
+  var css_248z$6 = ".y-message {\n  width: fit-content;\n  min-width: 320px;\n  max-width: calc(100% - 32px);\n  left: 50%;\n  transform: translateX(-50%);\n  position: fixed;\n  padding: 15px 15px 15px 20px;\n  box-sizing: border-box;\n  font-size: 16px;\n  border-radius: var(--y-border-radus-base);\n  background: #edf2fc;\n  z-index: 999;\n  transition: opacity 0.3s, transform 0.4s, top 0.4s;\n}\n\n.y-message--info {\n  color: var(--y-message-info-text-color);\n  background: var(--y-message-info-bg-color);\n}\n\n.y-message--success {\n  color: var(--y-message-success-text-color);\n  background: var(--y-message-success-bg-color);\n}\n\n.y-message--warning {\n  color: var(--y-message-warning-text-color);\n  background: var(--y-message-warning-bg-color);\n}\n.y-message--error {\n  color: var(--y-message-error-text-color);\n  background: var(--y-message-error-bg-color);\n}\n.fade-enter-active,\n.fade-leave-active {\n  transition: transform 0.4s, opacity 0.4s;\n}\n.fade-enter-from {\n  transform: translate(-50%, -50px);\n  opacity: 0;\n}\n.fade-leave-to {\n  transform: translate(-50%, -50px) !important;\n  opacity: 0;\n}\n.fade-enter-to,\n.fade-leave-from {\n  opacity: 1;\n}\n/* .fade-enter-from,\n.fade-leave-to {\n  transform: translateY(-150px);\n  opacity: 0;\n}\n.fade-enter-active,\n.fade-leave-active {\n  transition: all 0.5s ease;\n}\n.fade-enter-active,\n.fade-leave-active {\n  transform-origin: left center;\n  transition: all 0.5s, transform 0.5s;\n} */\n";
   styleInject(css_248z$6);
 
-  var css_248z$5 = ".y-message {\n  width: fit-content;\n  min-width: 320px;\n  max-width: calc(100% - 32px);\n  left: 50%;\n  transform: translateX(-50%);\n  position: fixed;\n  padding: 15px 15px 15px 20px;\n  box-sizing: border-box;\n  font-size: 16px;\n  border-radius: var(--y-border-radus-base);\n  background: #edf2fc;\n  z-index: 999;\n  transition: opacity 0.3s, transform 0.4s, top 0.4s;\n}\n\n.y-message--info {\n  color: var(--y-message-info-text-color);\n  background: var(--y-message-info-bg-color);\n}\n\n.y-message--success {\n  color: var(--y-message-success-text-color);\n  background: var(--y-message-success-bg-color);\n}\n\n.y-message--warning {\n  color: var(--y-message-warning-text-color);\n  background: var(--y-message-warning-bg-color);\n}\n.y-message--error {\n  color: var(--y-message-error-text-color);\n  background: var(--y-message-error-bg-color);\n}\n.fade-enter-active,\n.fade-leave-active {\n  transition: transform 0.4s, opacity 0.4s;\n}\n.fade-enter-from {\n  transform: translate(-50%, -50px);\n  opacity: 0;\n}\n.fade-leave-to {\n  transform: translate(-50%, -50px) !important;\n  opacity: 0;\n}\n.fade-enter-to,\n.fade-leave-from {\n  opacity: 1;\n}\n/* .fade-enter-from,\n.fade-leave-to {\n  transform: translateY(-150px);\n  opacity: 0;\n}\n.fade-enter-active,\n.fade-leave-active {\n  transition: all 0.5s ease;\n}\n.fade-enter-active,\n.fade-leave-active {\n  transform-origin: left center;\n  transition: all 0.5s, transform 0.5s;\n} */\n";
+  var css_248z$5 = ".y-tab--list {\n  display: flex;\n  flex-wrap: nowrap;\n  position: relative;\n  border-bottom: 1px solid #eee;\n}\n.y-tab--item {\n  flex-shrink: 0;\n  padding-left: 36px;\n  cursor: pointer;\n  font-size: 14px;\n}\n.y-tab--item:hover {\n  color: var(--y-text-color-primary);\n}\n.y-tab--item:first-child {\n  padding-left: 0;\n}\n.y-tab--content {\n  padding: 6px 0;\n}\n.y-tab--active {\n  color: var(--y-text-color-primary);\n}\n.y-tab--line {\n  position: absolute;\n  bottom: -1px;\n  height: 2px;\n  background: var(--y-text-color-primary);\n  transition: all 0.25s;\n}\n.y-tab--pain {\n  padding: 20px 0;\n}\n";
   styleInject(css_248z$5);
 
-  var css_248z$4 = ".y-tab--list {\n  display: flex;\n  flex-wrap: nowrap;\n  position: relative;\n  border-bottom: 1px solid #eee;\n}\n.y-tab--item {\n  flex-shrink: 0;\n  padding-left: 36px;\n  cursor: pointer;\n  font-size: 14px;\n}\n.y-tab--item:first-child {\n  padding-left: 0;\n}\n.y-tab--content {\n  padding: 6px 0;\n}\n.y-tab--active {\n  color: var(--y-text-color-primary);\n}\n";
+  var css_248z$4 = ".y-upload {\n}\n";
   styleInject(css_248z$4);
 
-  var css_248z$3 = ".y-upload {\n}\n";
+  var css_248z$3 = ".y-table {\n  order: 0;\n  border-radius: 3px;\n}\n.y-table-number {\n  max-width: 70px;\n}\n.y-table .y-table-header th {\n  padding: 12px;\n  background: #fafafa;\n  font-weight: 500;\n  color: rgb(31, 34, 37);\n}\n.y-table .y-table-body {\n  font-size: 14px;\n  color: #000000d9;\n}\n.y-table .y-table-body td {\n  padding: 8px;\n}\n\n.y-table-bottom td,\nth {\n  border-bottom: 1px solid rgba(239, 239, 245, 1) !important;\n}\n.y-table-border td {\n  border-right: 1px solid rgba(239, 239, 245, 1) !important;\n  border-bottom: 1px solid rgba(239, 239, 245, 1) !important;\n}\n.y-table-border th {\n  border-right: 1px solid rgba(239, 239, 245, 1) !important;\n  border-bottom: 1px solid rgba(239, 239, 245, 1) !important;\n}\n.y-table-border td:first-child {\n  border-left: 1px solid rgba(239, 239, 245, 1) !important;\n}\n.y-table-border th:first-child {\n  border-left: 1px solid rgba(239, 239, 245, 1) !important;\n}\n.y-table-border thead th {\n  border-top: 1px solid rgba(239, 239, 245, 1) !important;\n}\n.y-table-stripe:nth-child(2n) {\n  background: #f9f9f9 !important;\n}\n";
   styleInject(css_248z$3);
 
-  var css_248z$2 = ".y-table {\n  order: 0;\n  border-radius: 3px;\n}\n.y-table-number {\n  max-width: 70px;\n}\n.y-table .y-table-header th {\n  padding: 12px;\n  background: #fafafa;\n  font-weight: 500;\n  color: rgb(31, 34, 37);\n}\n.y-table .y-table-body {\n  font-size: 14px;\n  color: #000000d9;\n}\n.y-table .y-table-body td {\n  padding: 8px;\n}\n\n.y-table-bottom td,\nth {\n  border-bottom: 1px solid rgba(239, 239, 245, 1) !important;\n}\n.y-table-border td {\n  border-right: 1px solid rgba(239, 239, 245, 1) !important;\n  border-bottom: 1px solid rgba(239, 239, 245, 1) !important;\n}\n.y-table-border th {\n  border-right: 1px solid rgba(239, 239, 245, 1) !important;\n  border-bottom: 1px solid rgba(239, 239, 245, 1) !important;\n}\n.y-table-border td:first-child {\n  border-left: 1px solid rgba(239, 239, 245, 1) !important;\n}\n.y-table-border th:first-child {\n  border-left: 1px solid rgba(239, 239, 245, 1) !important;\n}\n.y-table-border thead th {\n  border-top: 1px solid rgba(239, 239, 245, 1) !important;\n}\n.y-table-stripe:nth-child(2n) {\n  background: #f9f9f9 !important;\n}\n";
+  var css_248z$2 = ".y-water {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  pointer-events: none;\n  background-repeat: repeat;\n}\n.y-water--wraper {\n  position: relative;\n}\n";
   styleInject(css_248z$2);
 
-  var css_248z$1 = ".y-water {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  pointer-events: none;\n  background-repeat: repeat;\n}\n.y-water--wraper {\n  position: relative;\n}\n";
+  var css_248z$1 = ".y-carousel {\n  width: 100%;\n  height: 100%;\n  min-height: 150px;\n  position: relative;\n  overflow: hidden;\n}\n.y-carousel-body {\n  display: flex;\n  width: 100%;\n  height: 100%;\n}\n.y-carousel-item {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  left: 0;\n  top: 0;\n  flex-shrink: 0;\n  overflow: hidden;\n  opacity: 0;\n  transition: opacity 0.5s linear;\n}\n.y-carousel-item--img {\n  width: 100%;\n  height: 100%;\n  cursor: pointer;\n}\n.y-carousel:hover .y-carousel-btn {\n  opacity: 1 !important;\n}\n.activeImg {\n  opacity: 1;\n}\n.y-carousel-dote {\n  position: absolute;\n  left: 0;\n  bottom: 10px;\n  z-index: 2;\n  width: 100%;\n  text-align: center;\n}\n.y-carousel-dote--item {\n  width: 12px;\n  height: 12px;\n  margin-left: 10px;\n  display: inline-block;\n  background: rgba(0, 0, 0, 0.2);\n  border-radius: 50%;\n  cursor: pointer;\n}\n.y-carousel-dote--active {\n  background: #fff;\n}\n.y-carousel-btn {\n  width: 44px;\n  height: 44px;\n  background: rgba(0, 0, 0, 0.2);\n  color: #fff;\n  border-radius: 50%;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  z-index: 2;\n  text-align: center;\n  line-height: 44px;\n  opacity: 0;\n  font-family: serif;\n  text-decoration: none;\n  transition: all 0.5s;\n}\n.prev {\n  left: 20px;\n}\n.next {\n  right: 20px;\n}\n";
   styleInject(css_248z$1);
 
-  var css_248z = ".y-carousel {\n  width: 100%;\n  height: 100%;\n  min-height: 150px;\n  position: relative;\n  overflow: hidden;\n}\n.y-carousel-body {\n  display: flex;\n  width: 100%;\n  height: 100%;\n}\n.y-carousel-item {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  left: 0;\n  top: 0;\n  flex-shrink: 0;\n  overflow: hidden;\n  opacity: 0;\n  transition: opacity 0.5s linear;\n}\n.y-carousel-item--img {\n  width: 100%;\n  height: 100%;\n  cursor: pointer;\n}\n.y-carousel:hover .y-carousel-btn {\n  opacity: 1 !important;\n}\n.activeImg {\n  opacity: 1;\n}\n.y-carousel-dote {\n  position: absolute;\n  left: 0;\n  bottom: 10px;\n  z-index: 2;\n  width: 100%;\n  text-align: center;\n}\n.y-carousel-dote--item {\n  width: 12px;\n  height: 12px;\n  margin-left: 10px;\n  display: inline-block;\n  background: rgba(0, 0, 0, 0.2);\n  border-radius: 50%;\n  cursor: pointer;\n}\n.y-carousel-dote--active {\n  background: #fff;\n}\n.y-carousel-btn {\n  width: 44px;\n  height: 44px;\n  background: rgba(0, 0, 0, 0.2);\n  color: #fff;\n  border-radius: 50%;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  z-index: 2;\n  text-align: center;\n  line-height: 44px;\n  opacity: 0;\n  font-family: serif;\n  text-decoration: none;\n  transition: all 0.5s;\n}\n.prev {\n  left: 20px;\n}\n.next {\n  right: 20px;\n}\n";
+  var css_248z = "";
   styleInject(css_248z);
 
-  const _hoisted_1$7 = ["disabled"];
-  var script$9 = /*#__PURE__*/ vue.defineComponent({
+  const _hoisted_1$a = ["disabled"];
+  var script$b = /*#__PURE__*/ vue.defineComponent({
       __name: 'index',
       props: {
           type: {
@@ -105,26 +108,26 @@
                   disabled: __props.disabled
               }, [
                   vue.renderSlot(_ctx.$slots, "default")
-              ], 10 /* CLASS, PROPS */, _hoisted_1$7));
+              ], 10 /* CLASS, PROPS */, _hoisted_1$a));
           };
       }
   });
 
-  script$9.__file = "component/button/index.vue";
+  script$b.__file = "component/button/index.vue";
 
-  script$9.install = (app) => {
-      app.component("y-button", script$9);
+  script$b.install = (app) => {
+      app.component("y-button", script$b);
   };
 
-  const _hoisted_1$6 = {
+  const _hoisted_1$9 = {
       key: 0,
       class: "y-dialog"
   };
-  const _hoisted_2$2 = { class: "y-dialog_header" };
-  const _hoisted_3$2 = { class: "y-dialog_title" };
+  const _hoisted_2$3 = { class: "y-dialog_header" };
+  const _hoisted_3$3 = { class: "y-dialog_title" };
   const _hoisted_4$2 = { class: "y-dialog_body" };
   const _hoisted_5 = { class: "y-dialog_footer" };
-  var script$8 = /*#__PURE__*/ vue.defineComponent({
+  var script$a = /*#__PURE__*/ vue.defineComponent({
       __name: 'index',
       props: {
           title: {
@@ -170,43 +173,48 @@
               emit("close");
           };
           return (_ctx, _cache) => {
-              return (__props.visible)
-                  ? (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$6, [
-                      vue.createElementVNode("div", {
-                          class: "y-dialog_box",
-                          style: vue.normalizeStyle(vue.unref(style))
-                      }, [
-                          vue.createElementVNode("div", _hoisted_2$2, [
-                              vue.createElementVNode("span", _hoisted_3$2, vue.toDisplayString(__props.title), 1 /* TEXT */),
-                              (__props.showClose)
-                                  ? (vue.openBlock(), vue.createElementBlock("i", {
-                                      key: 0,
-                                      class: "y-dialog_close",
-                                      onClick: onClose
-                                  }))
-                                  : vue.createCommentVNode("v-if", true)
-                          ]),
-                          vue.createElementVNode("div", _hoisted_4$2, [
-                              vue.renderSlot(_ctx.$slots, "default")
-                          ]),
-                          vue.createElementVNode("div", _hoisted_5, [
-                              vue.renderSlot(_ctx.$slots, "footer")
-                          ])
-                      ], 4 /* STYLE */)
-                  ]))
-                  : vue.createCommentVNode("v-if", true);
+              return (vue.openBlock(), vue.createBlock(vue.Transition, { name: "dialog-fade" }, {
+                  default: vue.withCtx(() => [
+                      (__props.visible)
+                          ? (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$9, [
+                              vue.createElementVNode("div", {
+                                  class: "y-dialog_box",
+                                  style: vue.normalizeStyle(vue.unref(style))
+                              }, [
+                                  vue.createElementVNode("div", _hoisted_2$3, [
+                                      vue.createElementVNode("span", _hoisted_3$3, vue.toDisplayString(__props.title), 1 /* TEXT */),
+                                      (__props.showClose)
+                                          ? (vue.openBlock(), vue.createElementBlock("i", {
+                                              key: 0,
+                                              class: "y-dialog_close",
+                                              onClick: onClose
+                                          }))
+                                          : vue.createCommentVNode("v-if", true)
+                                  ]),
+                                  vue.createElementVNode("div", _hoisted_4$2, [
+                                      vue.renderSlot(_ctx.$slots, "default")
+                                  ]),
+                                  vue.createElementVNode("div", _hoisted_5, [
+                                      vue.renderSlot(_ctx.$slots, "footer")
+                                  ])
+                              ], 4 /* STYLE */)
+                          ]))
+                          : vue.createCommentVNode("v-if", true)
+                  ]),
+                  _: 3 /* FORWARDED */
+              }));
           };
       }
   });
 
-  script$8.__file = "component/dialog/index.vue";
+  script$a.__file = "component/dialog/index.vue";
 
-  script$8.install = (app) => {
-      app.component("y-dialog", script$8);
+  script$a.install = (app) => {
+      app.component("y-dialog", script$a);
   };
 
-  const _hoisted_1$5 = { class: "y-rate" };
-  var script$7 = /*#__PURE__*/ vue.defineComponent({
+  const _hoisted_1$8 = { class: "y-rate" };
+  var script$9 = /*#__PURE__*/ vue.defineComponent({
       __name: 'index',
       props: {
           value: {
@@ -216,18 +224,18 @@
       },
       setup(__props) {
           return (_ctx, _cache) => {
-              return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$5));
+              return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$8));
           };
       }
   });
 
-  script$7.__file = "component/rate/index.vue";
+  script$9.__file = "component/rate/index.vue";
 
-  script$7.install = (app) => {
-      app.component("y-rate", script$7);
+  script$9.install = (app) => {
+      app.component("y-rate", script$9);
   };
 
-  var script$6 = /*#__PURE__*/ vue.defineComponent({
+  var script$8 = /*#__PURE__*/ vue.defineComponent({
       __name: 'index',
       props: {
           type: {
@@ -289,7 +297,7 @@
       }
   });
 
-  script$6.__file = "component/message/index.vue";
+  script$8.__file = "component/message/index.vue";
 
   const types = ["info", "success", "error", "warning"];
   const instances = [];
@@ -300,7 +308,7 @@
           top += vm.el.offsetHeight + 16 || 16;
       });
       const container = document.createDocumentFragment();
-      const vm = vue.h(script$6, Object.assign(Object.assign({}, options), { top,
+      const vm = vue.h(script$8, Object.assign(Object.assign({}, options), { top,
           onClose() {
               close(vm);
           },
@@ -335,8 +343,8 @@
       };
   });
 
-  const _hoisted_1$4 = { class: "y-tabs" };
-  var script$5 = /*#__PURE__*/ vue.defineComponent({
+  const _hoisted_1$7 = { class: "y-tabs" };
+  var script$7 = /*#__PURE__*/ vue.defineComponent({
       __name: 'index',
       props: {
           value: {
@@ -348,19 +356,27 @@
       setup(__props) {
           const props = __props;
           const slot = vue.useSlots();
-          const renderButton = (name, tab, index) => vue.h("div", {
-              name: props.name,
-              value: name,
-              class: ["y-tab--item", currentTab.value === tab ? "y-tab--active" : ""],
-              onClick: () => {
-                  currentTab.value = tab;
-              },
-          }, vue.h("div", { class: "y-tab--content" }, name));
-          const renderTab = () => vue.h("div", { class: "y-tab--list" }, slot.default &&
-              slot.default().map((item, index) => {
-                  var _a, _b;
-                  return renderButton((_a = item.props) === null || _a === void 0 ? void 0 : _a.name, (_b = item.props) === null || _b === void 0 ? void 0 : _b.tab);
-              }));
+          const renderButton = (name, tab, index) => [
+              vue.h("div", {
+                  name: props.name,
+                  value: name,
+                  class: ["y-tab--item", currentTab.value === tab ? "y-tab--active" : ""],
+                  onClick: () => {
+                      currentTab.value = tab;
+                  },
+              }, vue.h("div", { class: "y-tab--content" }, name)),
+          ];
+          const renderTab = () => vue.h("div", { class: "y-tab--list", ref: "yTab" }, [
+              slot.default &&
+                  slot.default().map((item, index) => {
+                      var _a, _b;
+                      return renderButton((_a = item.props) === null || _a === void 0 ? void 0 : _a.name, (_b = item.props) === null || _b === void 0 ? void 0 : _b.tab);
+                  }),
+              vue.h("div", {
+                  class: "y-tab--line",
+                  style: `width:${tabWidth.value};transform:translate(${tabLeft.value}px);position:absolute;`,
+              }),
+          ]);
           // const renderTab = {
           //   render() {
           //     if (slot.default) {
@@ -371,7 +387,35 @@
           //     }
           //   },
           // };
+          const tabWidth = vue.ref("0px");
+          const tabLeft = vue.ref(0);
           const currentTab = vue.ref(props.value || "");
+          vue.ref(null);
+          const getWidth = () => {
+              vue.nextTick(() => {
+                  var _a;
+                  const name = document.querySelector(".y-tab--list");
+                  for (let i = 0; i < name.children.length; i++) {
+                      if ((_a = name.children[i].getAttribute("class")) === null || _a === void 0 ? void 0 : _a.includes("y-tab--active")) {
+                          tabWidth.value =
+                              Number(window.getComputedStyle(name.children[i]).width.replace("px", "")) -
+                                  Number(window
+                                      .getComputedStyle(name.children[i])
+                                      .paddingLeft.replace("px", "")) +
+                                  "px";
+                          tabLeft.value =
+                              name.children[i].offsetLeft -
+                                  name.offsetLeft +
+                                  Number(window
+                                      .getComputedStyle(name.children[i])
+                                      .paddingLeft.replace("px", ""));
+                      }
+                  }
+              });
+          };
+          vue.watch(currentTab, (val) => {
+              getWidth();
+          });
           const renderContent = () => {
               return (slot.default &&
                   slot.default().find((item) => {
@@ -383,8 +427,11 @@
                       return ((_a = item.props) === null || _a === void 0 ? void 0 : _a.tab) === currentTab.value;
                   }));
           };
+          vue.onMounted(() => {
+              getWidth();
+          });
           return (_ctx, _cache) => {
-              return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$4, [
+              return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$7, [
                   vue.createVNode(renderTab),
                   vue.createVNode(renderContent)
               ]));
@@ -392,13 +439,14 @@
       }
   });
 
-  script$5.__file = "component/tabs/index.vue";
+  script$7.__file = "component/tabs/index.vue";
 
-  script$5.install = (app) => {
-      app.component("y-tabs", script$5);
+  script$7.install = (app) => {
+      app.component("y-tabs", script$7);
   };
 
-  var script$4 = /*#__PURE__*/ vue.defineComponent({
+  const _hoisted_1$6 = { class: "y-tab--pain" };
+  var script$6 = /*#__PURE__*/ vue.defineComponent({
       __name: 'index',
       props: {
           tab: String,
@@ -406,19 +454,21 @@
       },
       setup(__props) {
           return (_ctx, _cache) => {
-              return vue.renderSlot(_ctx.$slots, "default");
+              return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$6, [
+                  vue.renderSlot(_ctx.$slots, "default")
+              ]));
           };
       }
   });
 
-  script$4.__file = "component/tabPain/index.vue";
+  script$6.__file = "component/tabPain/index.vue";
 
-  script$4.install = (app) => {
-      app.component("y-tab-pain", script$4);
+  script$6.install = (app) => {
+      app.component("y-tab-pain", script$6);
   };
 
-  const _hoisted_1$3 = { class: "y-upload" };
-  var script$3 = /*#__PURE__*/ vue.defineComponent({
+  const _hoisted_1$5 = { class: "y-upload" };
+  var script$5 = /*#__PURE__*/ vue.defineComponent({
       __name: 'index',
       props: {
           limit: {
@@ -428,25 +478,25 @@
       },
       setup(__props) {
           return (_ctx, _cache) => {
-              return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$3));
+              return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$5));
           };
       }
   });
 
-  script$3.__file = "component/upload/index.vue";
+  script$5.__file = "component/upload/index.vue";
 
-  script$3.install = (app) => {
-      app.component("y-upload", script$3);
+  script$5.install = (app) => {
+      app.component("y-upload", script$5);
   };
 
-  const _hoisted_1$2 = { class: "y-table-header" };
-  const _hoisted_2$1 = {
+  const _hoisted_1$4 = { class: "y-table-header" };
+  const _hoisted_2$2 = {
       key: 0,
       class: "y-table-number"
   };
-  const _hoisted_3$1 = { class: "y-table-body" };
+  const _hoisted_3$2 = { class: "y-table-body" };
   const _hoisted_4$1 = { key: 0 };
-  var script$2 = /*#__PURE__*/ vue.defineComponent({
+  var script$4 = /*#__PURE__*/ vue.defineComponent({
       __name: 'index',
       props: {
           columns: {
@@ -477,10 +527,10 @@
                   cellpadding: "0",
                   cellspacing: "0"
               }, [
-                  vue.createElementVNode("thead", _hoisted_1$2, [
+                  vue.createElementVNode("thead", _hoisted_1$4, [
                       vue.createElementVNode("tr", null, [
                           (__props.showNum)
-                              ? (vue.openBlock(), vue.createElementBlock("th", _hoisted_2$1, "序号"))
+                              ? (vue.openBlock(), vue.createElementBlock("th", _hoisted_2$2, "序号"))
                               : vue.createCommentVNode("v-if", true),
                           (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(__props.columns, (item) => {
                               return (vue.openBlock(), vue.createElementBlock("th", {
@@ -489,7 +539,7 @@
                           }), 128 /* KEYED_FRAGMENT */))
                       ])
                   ]),
-                  vue.createElementVNode("tbody", _hoisted_3$1, [
+                  vue.createElementVNode("tbody", _hoisted_3$2, [
                       (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(__props.dataSource, (dataItem, dataIndex) => {
                           return (vue.openBlock(), vue.createElementBlock("tr", {
                               key: dataIndex,
@@ -520,14 +570,14 @@
       }
   });
 
-  script$2.__file = "component/table/index.vue";
+  script$4.__file = "component/table/index.vue";
 
-  script$2.install = (app) => {
-      app.component("y-table", script$2);
+  script$4.install = (app) => {
+      app.component("y-table", script$4);
   };
 
-  const _hoisted_1$1 = { class: "y-water--wraper" };
-  var script$1 = /*#__PURE__*/ vue.defineComponent({
+  const _hoisted_1$3 = { class: "y-water--wraper" };
+  var script$3 = /*#__PURE__*/ vue.defineComponent({
       __name: 'index',
       props: {
           title: {
@@ -581,7 +631,7 @@
               warter(props.title);
           });
           return (_ctx, _cache) => {
-              return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$1, [
+              return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$3, [
                   vue.renderSlot(_ctx.$slots, "default"),
                   vue.createElementVNode("div", {
                       ref_key: "waterMark",
@@ -593,17 +643,17 @@
       }
   });
 
-  script$1.__file = "component/waterMark/index.vue";
+  script$3.__file = "component/waterMark/index.vue";
 
-  script$1.install = (app) => {
-      app.component("y-water-mark", script$1);
+  script$3.install = (app) => {
+      app.component("y-water-mark", script$3);
   };
 
-  const _hoisted_1 = { class: "y-carousel-body" };
-  const _hoisted_2 = ["src"];
-  const _hoisted_3 = { class: "y-carousel-dote" };
+  const _hoisted_1$2 = { class: "y-carousel-body" };
+  const _hoisted_2$1 = ["src"];
+  const _hoisted_3$1 = { class: "y-carousel-dote" };
   const _hoisted_4 = ["onClick"];
-  var script = /*#__PURE__*/ vue.defineComponent({
+  var script$2 = /*#__PURE__*/ vue.defineComponent({
       __name: 'index',
       props: {
           list: {
@@ -671,7 +721,7 @@
                   onMouseenter: _cache[2] || (_cache[2] = ($event) => (stop())),
                   onMouseleave: _cache[3] || (_cache[3] = ($event) => (start()))
               }, [
-                  vue.createElementVNode("div", _hoisted_1, [
+                  vue.createElementVNode("div", _hoisted_1$2, [
                       (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(__props.list, (item, index) => {
                           return (vue.openBlock(), vue.createElementBlock("div", {
                               class: vue.normalizeClass(["y-carousel-item", vue.unref(curIndex) === index ? 'activeImg' : '']),
@@ -680,7 +730,7 @@
                               vue.createElementVNode("img", {
                                   class: "y-carousel-item--img",
                                   src: __props.imgValue ? item[__props.imgValue] : item.imgUrl
-                              }, null, 8 /* PROPS */, _hoisted_2)
+                              }, null, 8 /* PROPS */, _hoisted_2$1)
                           ], 2 /* CLASS */));
                       }), 128 /* KEYED_FRAGMENT */)),
                       vue.createElementVNode("a", {
@@ -693,7 +743,7 @@
                           class: "y-carousel-btn next",
                           onClick: _cache[1] || (_cache[1] = ($event) => (toggle(1)))
                       }, ">"),
-                      vue.createElementVNode("div", _hoisted_3, [
+                      vue.createElementVNode("div", _hoisted_3$1, [
                           (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(__props.list, (item, index) => {
                               return (vue.openBlock(), vue.createElementBlock("span", {
                                   class: vue.normalizeClass(["y-carousel-dote--item", vue.unref(curIndex) === index ? 'y-carousel-dote--active' : '']),
@@ -708,23 +758,100 @@
       }
   });
 
-  script.__file = "component/carousel/index.vue";
+  script$2.__file = "component/carousel/index.vue";
 
-  script.install = (app) => {
-      app.component("y-carousel", script);
+  script$2.install = (app) => {
+      app.component("y-carousel", script$2);
   };
+
+  const _hoisted_1$1 = { class: "y-form" };
+  var script$1 = /*#__PURE__*/ vue.defineComponent({
+      __name: 'index',
+      props: {},
+      setup(__props) {
+          return (_ctx, _cache) => {
+              return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$1, [
+                  vue.renderSlot(_ctx.$slots, "default")
+              ]));
+          };
+      }
+  });
+
+  script$1.__file = "component/form/index.vue";
+
+  script$1.install = (app) => {
+      app.component("y-form", script$1);
+  };
+
+  const _hoisted_1 = /*#__PURE__*/ vue.createElementVNode("label", { class: "y-form-item__label" }, null, -1 /* HOISTED */);
+  const _hoisted_2 = { class: "y-form-item__content" };
+  const _hoisted_3 = { class: "y-form-item__error" };
+  var script = /*#__PURE__*/ vue.defineComponent({
+      __name: 'index',
+      props: formItemProps,
+      setup(__props) {
+          const validateState = vue.ref("");
+          const validateMessage = vue.ref("校验失败");
+          return (_ctx, _cache) => {
+              return (vue.openBlock(), vue.createElementBlock("div", {
+                  class: vue.normalizeClass(["y-form-item",
+                      validateState.value === 'success'
+                          ? 'success'
+                          : validateState.value === 'error'
+                              ? 'error'
+                              : ''
+                  ])
+              }, [
+                  _hoisted_1,
+                  vue.createElementVNode("div", _hoisted_2, [
+                      vue.renderSlot(_ctx.$slots, "default"),
+                      vue.createElementVNode("div", _hoisted_3, vue.toDisplayString(validateMessage.value), 1 /* TEXT */)
+                  ])
+              ], 2 /* CLASS */));
+          };
+      }
+  });
+
+  script.__file = "component/formItem/index.vue";
+
+  const formItemProps = {
+      prop: String,
+      label: String,
+      rules: [Object, Array],
+      showMessage: {
+          type: Boolean,
+          default: true,
+      },
+      // rules: [Object, Array] as PropType<FormItemRule | FormItemRule[]>,
+  };
+  script.install = (app) => {
+      app.component("y-form-item", script);
+  };
+  // index2内容
+  // import FormItem from "./index.vue";
+  // function withInstall(form: any) {}
+  // const FormItem = withInstall(FormItem);
+  // export default FormItem;
+  // export type { formItemProps } from "./index.ts";
+  // declare module "vue" {
+  //   export interface GlobalComponents {
+  //     yFormItem: typeof FormItem;
+  //   }
+  // }
 
   // const components = [yButton];
   const install = (app) => {
-      app.component("y-button", script$9);
-      app.component("y-dialog", script$8);
-      app.component("y-rate", script$7);
-      app.component("y-tabs", script$5);
-      app.component("y-tab-pane", script$4);
-      app.component("y-upload", script$3);
-      app.component("y-table", script$2);
-      app.component("y-water-mark", script$1);
-      app.component("y-carousel", script);
+      app.component("y-button", script$b);
+      app.component("y-dialog", script$a);
+      app.component("y-rate", script$9);
+      app.component("y-tabs", script$7);
+      app.component("y-tab-pane", script$6);
+      app.component("y-upload", script$5);
+      app.component("y-table", script$4);
+      app.component("y-water-mark", script$3);
+      app.component("y-carousel", script$2);
+      app.component("y-form-item", script);
+      app.component("y-form", script$1);
       app.component("y-message");
       // components.forEach((component) => {
       //   app.component("y-button", component);
@@ -732,29 +859,33 @@
   };
   var index = {
       install,
-      "y-button": script$9,
-      "y-dialog": script$8,
-      "y-rate": script$7,
+      "y-button": script$b,
+      "y-dialog": script$a,
+      "y-rate": script$9,
       YMessage: Message,
-      YTabs: script$5,
-      YUpload: script$3,
-      YTabPane: script$4,
-      YTable: script$2,
-      YWaterMark: script$1,
-      YCarousel: script,
+      YTabs: script$7,
+      YUpload: script$5,
+      YTabPane: script$6,
+      YTable: script$4,
+      YWaterMark: script$3,
+      YCarousel: script$2,
+      YForm: script$1,
+      YFormItem: script,
   };
 
-  exports.YCarousel = script;
+  exports.YCarousel = script$2;
+  exports.YForm = script$1;
+  exports.YFormItem = script;
   exports.YMessage = Message;
-  exports.YTabPane = script$4;
-  exports.YTable = script$2;
-  exports.YUpload = script$3;
-  exports.YWaterMark = script$1;
+  exports.YTabPane = script$6;
+  exports.YTable = script$4;
+  exports.YUpload = script$5;
+  exports.YWaterMark = script$3;
   exports["default"] = index;
   exports.install = install;
-  exports.yButton = script$9;
-  exports.yDialog = script$8;
-  exports.yRate = script$7;
+  exports.yButton = script$b;
+  exports.yDialog = script$a;
+  exports.yRate = script$9;
 
   Object.defineProperty(exports, '__esModule', { value: true });
 

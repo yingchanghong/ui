@@ -34,3 +34,16 @@
   padding: 10px 20px 20px;
   text-align: right;
 }
+.dialog-fade-enter-from,
+.dialog-fade-leave-to {
+  opacity: 0;
+}
+.dialog-fade-enter-to,
+.dialog-fade-leave-from {
+  opacity: 1;
+}
+
+.dialog-fade-enter-active,
+.dialog-fade-leave-active {
+  transition: all 0.3s ease-in;
+}

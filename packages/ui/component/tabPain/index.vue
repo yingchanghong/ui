@@ -5,5 +5,5 @@ defineProps({
 });
 </script>
 <template>
-  <slot />
+  <div class="y-tab--pain"><slot /></div>
 </template>

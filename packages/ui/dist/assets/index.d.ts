@@ -8,3 +8,4 @@ import "./upload.css";
 import "./table.css";
 import "./waterMark.css";
 import "./carousel.css";
+import "./form.css";

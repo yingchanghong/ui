@@ -7,6 +7,7 @@ import Message from "../../../components/Message.vue";
 import Table from "../../../components/Table.vue";
 import WaterMark from "../../../components/WaterMark.vue";
 import Carousel from "../../../components/Carousel.vue";
+import Form from "../../../components/Form.vue";
 export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
@@ -18,6 +19,7 @@ export default {
     app.component("Table", Table);
     app.component("WaterMark", WaterMark);
     app.component("Carousel", Carousel);
+    app.component("Form", Form);
     import("y_ui").then((module) => {
       app.use(module);
     });

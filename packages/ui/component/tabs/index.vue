@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useSlots, h, render, ref } from "vue";
+import { useSlots, h, render, ref, watch, onMounted, nextTick } from "vue";
 
 const props = defineProps({
   value: {
@@ -9,7 +9,7 @@ const props = defineProps({
   name: String,
 });
 const slot = useSlots();
-const renderButton = (name: string, tab: string, index: number) =>
+const renderButton = (name: string, tab: string, index: number) => [
   h(
     "div",
     {
@@ -21,17 +21,20 @@ const renderButton = (name: string, tab: string, index: number) =>
       },
     },
     h("div", { class: "y-tab--content" }, name)
-  );
+  ),
+];
 
 const renderTab = () =>
-  h(
-    "div",
-    { class: "y-tab--list" },
+  h("div", { class: "y-tab--list", ref: "yTab" }, [
     slot.default &&
       slot.default().map((item, index) => {
         return renderButton(item.props?.name, item.props?.tab, index);
-      })
-  );
+      }),
+    h("div", {
+      class: "y-tab--line",
+      style: `width:${tabWidth.value};transform:translate(${tabLeft.value}px);position:absolute;`,
+    }),
+  ]);
 // const renderTab = {
 //   render() {
 //     if (slot.default) {
@@ -42,8 +45,40 @@ const renderTab = () =>
 //     }
 //   },
 // };
-
+const tabWidth = ref("0px");
+const tabLeft = ref(0);
 const currentTab = ref(props.value || "");
+const yTab = ref(null);
+const getWidth = () => {
+  nextTick(() => {
+    const name = document.querySelector(".y-tab--list") as any;
+    for (let i = 0; i < name.children.length; i++) {
+      if (name.children[i].getAttribute("class")?.includes("y-tab--active")) {
+        tabWidth.value =
+          Number(
+            window.getComputedStyle(name.children[i]).width.replace("px", "")
+          ) -
+          Number(
+            window
+              .getComputedStyle(name.children[i])
+              .paddingLeft.replace("px", "")
+          ) +
+          "px";
+        tabLeft.value =
+          name.children[i].offsetLeft -
+          name.offsetLeft +
+          Number(
+            window
+              .getComputedStyle(name.children[i])
+              .paddingLeft.replace("px", "")
+          );
+      }
+    }
+  });
+};
+watch(currentTab, (val) => {
+  getWidth();
+});
 const renderContent = () => {
   return (
     slot.default &&
@@ -56,6 +91,10 @@ const renderContent = () => {
     })
   );
 };
+
+onMounted(() => {
+  getWidth();
+});
 </script>
 <template>
   <div class="y-tabs">

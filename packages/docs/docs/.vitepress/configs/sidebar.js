@@ -18,7 +18,10 @@ function getcomponentsSidebar() {
       text: "Form 表单组件",
       collapsible: true,
       collapsed: true,
-      items: [{ text: "html基础", link: "/document/HTML" }],
+      items: [
+        { text: "html基础", link: "/document/HTML" },
+        { text: "Form 表单", link: "/document/form/" },
+      ],
     },
     {
       text: "反馈组件",

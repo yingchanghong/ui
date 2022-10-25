@@ -11,6 +11,8 @@ import YUpload from "../component/upload/index";
 import YTable from "../component/table/index";
 import YWaterMark from "../component/waterMark/index";
 import YCarousel from "../component/carousel/index";
+import YForm from "../component/form/index";
+import YFormItem from "../component/formItem/index";
 // const components = [yButton];
 const install = (app: App) => {
   app.component("y-button", yButton);
@@ -22,6 +24,8 @@ const install = (app: App) => {
   app.component("y-table", YTable);
   app.component("y-water-mark", YWaterMark);
   app.component("y-carousel", YCarousel);
+  app.component("y-form-item", YFormItem);
+  app.component("y-form", YForm);
   app.component("y-message");
   // components.forEach((component) => {
   //   app.component("y-button", component);
@@ -40,6 +44,8 @@ export {
   YTable,
   YWaterMark,
   YCarousel,
+  YForm,
+  YFormItem,
 };
 export default {
   install,
@@ -53,4 +59,6 @@ export default {
   YTable,
   YWaterMark,
   YCarousel,
+  YForm,
+  YFormItem,
 };

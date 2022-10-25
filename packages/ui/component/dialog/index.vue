@@ -1,22 +1,25 @@
 <template>
-  <div v-if="visible" class="y-dialog">
-    <div class="y-dialog_box" :style="style">
-      <div class="y-dialog_header">
-        <span class="y-dialog_title">{{ title }}</span>
-        <i v-if="showClose" class="y-dialog_close" @click="onClose"></i>
-      </div>
-      <div class="y-dialog_body">
-        <slot></slot>
-      </div>
-      <div class="y-dialog_footer">
-        <slot name="footer"></slot>
+  <transition name="dialog-fade">
+    <div v-if="visible" class="y-dialog">
+      <div class="y-dialog_box" :style="style">
+        <div class="y-dialog_header">
+          <span class="y-dialog_title">{{ title }}</span>
+          <i v-if="showClose" class="y-dialog_close" @click="onClose"></i>
+        </div>
+        <div class="y-dialog_body">
+          <slot></slot>
+        </div>
+        <div class="y-dialog_footer">
+          <slot name="footer"></slot>
+        </div>
       </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script lang="ts" setup>
 import { computed, watch } from "vue";
+
 const emit = defineEmits(["close"]);
 const props = defineProps({
   title: {

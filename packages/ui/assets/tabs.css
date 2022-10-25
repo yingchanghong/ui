@@ -10,6 +10,9 @@
   cursor: pointer;
   font-size: 14px;
 }
+.y-tab--item:hover {
+  color: var(--y-text-color-primary);
+}
 .y-tab--item:first-child {
   padding-left: 0;
 }
@@ -18,4 +21,14 @@
 }
 .y-tab--active {
   color: var(--y-text-color-primary);
+}
+.y-tab--line {
+  position: absolute;
+  bottom: -1px;
+  height: 2px;
+  background: var(--y-text-color-primary);
+  transition: all 0.25s;
+}
+.y-tab--pain {
+  padding: 20px 0;
 }
