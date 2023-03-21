@@ -1,1 +1,0 @@
-import{_ as a,c as n,d as o,b as l,o as p,r as t}from"./app.a84a3f10.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"document/tabs/index.md"}'),e={name:"document/tabs/index.md"},c=l("",1);function r(D,F,y,_,i,u){const s=t("Tabs");return p(),n("div",null,[o(s),c])}const m=a(e,[["render",r]]);export{d as __pageData,m as default};
