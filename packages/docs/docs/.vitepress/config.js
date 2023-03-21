@@ -1,5 +1,6 @@
 const sidebar = require("./configs/sidebar");
 module.exports = {
+  base: "/ui/",
   title: "yUI",
   description: "vue3 ui",
   themeConfig: {
