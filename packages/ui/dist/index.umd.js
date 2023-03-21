@@ -788,7 +788,6 @@
   const _hoisted_3 = { class: "y-form-item__error" };
   var script = /*#__PURE__*/ vue.defineComponent({
       __name: 'index',
-      props: formItemProps,
       setup(__props) {
           const validateState = vue.ref("");
           const validateMessage = vue.ref("校验失败");
@@ -814,16 +813,6 @@
 
   script.__file = "component/formItem/index.vue";
 
-  const formItemProps = {
-      prop: String,
-      label: String,
-      rules: [Object, Array],
-      showMessage: {
-          type: Boolean,
-          default: true,
-      },
-      // rules: [Object, Array] as PropType<FormItemRule | FormItemRule[]>,
-  };
   script.install = (app) => {
       app.component("y-form-item", script);
   };
@@ -832,12 +821,6 @@
   // function withInstall(form: any) {}
   // const FormItem = withInstall(FormItem);
   // export default FormItem;
-  // export type { formItemProps } from "./index.ts";
-  // declare module "vue" {
-  //   export interface GlobalComponents {
-  //     yFormItem: typeof FormItem;
-  //   }
-  // }
 
   // const components = [yButton];
   const install = (app) => {

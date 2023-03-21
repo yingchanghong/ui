@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:ui": "pnpm run build --filter '@yingchang/ui'",
+    "build:ui": "npm -C packages/ui run build",
     "docs:build": "npm -C packages/docs run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -19,9 +19,8 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
-import { FormValidateState, formItemProps } from "./index";
+import { FormValidateState } from "./index";
 
-const props = defineProps(formItemProps);
 const validateState = ref<FormValidateState>("");
 const validateMessage = ref("校验失败");
 </script>
